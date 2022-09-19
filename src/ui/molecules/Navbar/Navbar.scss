@@ -1,0 +1,55 @@
+.navbar {
+  width: 100%;
+  max-width: 1600px;
+
+  padding: 60px 0;
+  @include flex(space-between, center);
+
+  &__title {
+    @include SFProBold;
+    font-size: rem(20px); // convert px to rem
+
+    z-index: 3;
+    color: $blackPrimary;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      color: $primaryBlue;
+    }
+  }
+
+  &__socials {
+    z-index: 3;
+    width: 210px;
+    @include flex(space-between, center);
+  }
+}
+
+.menu {
+  position: absolute;
+  left: 0;
+  top: 63.5px;
+  right: 0;
+
+  z-index: 2;
+  text-align: center;
+
+  &__item {
+    @include SFProRegular;
+    color: $blackPrimary;
+    font-size: rem(16px);
+
+    margin: 0 40px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--active {
+      color: $primaryBlue;
+      border-bottom: 1px solid $primaryBlue;
+      margin: 0 40px;
+    }
+  }
+}
