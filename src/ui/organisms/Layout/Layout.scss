@@ -1,0 +1,13 @@
+.layout {
+  width: 100%;
+  @include flex(start, center, column);
+  min-height: 100vh;
+
+  &__top {
+    width: 100%;
+    @include flex(space-between, center, column);
+
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+}
