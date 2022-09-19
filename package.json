@@ -9,13 +9,29 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@beam-australia/react-env": "^3.1.1",
+    "@types/axios": "^0.14.0",
+    "axios": "^0.27.2",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "node-sass": "^7.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
     "@vitejs/plugin-react": "^2.1.0",
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-import-resolver-typescript": "^3.5.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.8",
+    "prettier": "^2.7.1",
     "typescript": "^4.6.4",
     "vite": "^3.1.0"
   }
