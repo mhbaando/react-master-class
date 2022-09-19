@@ -1,0 +1,8 @@
+@mixin flex($jc, $ai, $dir: "row") {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  @if ($dir) {
+    flex-direction: $dir;
+  }
+}
