@@ -1,6 +1,6 @@
 .layout {
   width: 100%;
-  @include flex(start, center, column);
+  @include flex(space-between, center, column);
   min-height: 100vh;
 
   &__top {
