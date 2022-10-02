@@ -1,5 +1,5 @@
 import { createBrowserRouter, redirect } from "react-router-dom";
-import About from "@/pages/About";
+import About from "@/pages/About/About";
 import Contacts from "@/pages/Contacts";
 import App from "@/App";
 import NotFound from "@/pages/NotFound";
