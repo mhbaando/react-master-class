@@ -22,7 +22,8 @@
   &__socials {
     z-index: 3;
     width: 210px;
-    @include flex(space-between, center);
+    @include flex(flex-end, center);
+    gap: 15px;
   }
 }
 

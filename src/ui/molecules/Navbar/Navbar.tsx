@@ -1,7 +1,10 @@
 import { Navigate, NavLink } from "react-router-dom";
-import useMenu from "@/hooks/useMenu";
-
 import "./Navbar.scss";
+
+import useMenu from "@/hooks/useMenu";
+import Socials from "@/ui/atoms/Socials";
+import Menus from "@/ui/atoms/Menus";
+
 const Navbar: React.FC = (): React.ReactElement => {
   const menu = useMenu();
   return (
@@ -10,20 +13,9 @@ const Navbar: React.FC = (): React.ReactElement => {
         <div className="navbar__title">
           <NavLink to="/">Mohamud</NavLink>
         </div>
-        <div className="navbar__socials">Social Links</div>
+        <Socials />
       </div>
-      <div className="menu">
-        {menu.map((menuItem) => (
-          <NavLink
-            to={menuItem.route}
-            key={menuItem.route}
-            className={`menu__item${menuItem.isActive ? "--active" : ""}`}
-            onClick={() => <Navigate to={menuItem.route} replace={true} />}
-          >
-            {menuItem.lable}
-          </NavLink>
-        ))}
-      </div>
+      <Menus />
     </>
   );
 };
