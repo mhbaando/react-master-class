@@ -1,0 +1,40 @@
+.footer {
+  width: 100vw;
+
+  margin-top: 100px;
+  background-color: $backgroundFooter;
+  @include flex(space-between, center, column);
+
+  &__menu {
+    margin-top: 90px;
+    @include flex(center, center);
+
+    &--item {
+      @include SFProRegular;
+      color: $blackPrimary;
+      font-size: rem(16px);
+      margin: 0 40px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &--active {
+        @include SFProRegular;
+        color: $primaryBlue;
+        font-size: rem(16px);
+        margin: 0 40px;
+        border: 1px solid;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .navbar__socials {
+    width: 210px;
+    @include flex(space-between, center);
+    margin: 50px 0;
+  }
+}
